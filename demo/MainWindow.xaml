@@ -1,0 +1,22 @@
+﻿<Window x:Class="demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Loaded="window_loaded"
+        xmlns:local="clr-namespace:demo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="225*"/>
+            <ColumnDefinition Width="508*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="perviousImage"  Content="pervious" HorizontalAlignment="Left" Margin="5,44,0,0" VerticalAlignment="Top" Grid.Column="2" Click="perviousImage_Click"/>
+        <Button x:Name="info" Click="sunInformation_Click" Content="info" HorizontalAlignment="Left" Margin="62,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.036,0.599" Width="46" Grid.Column="2"/>
+        <Button x:Name="nextImage"  Content="Next" HorizontalAlignment="Left" Margin="123,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.036,0.599" Width="55" Grid.Column="2" Click="nextImage_Click"/>
+        <Image x:Name="commicImage" Grid.Column="1" HorizontalAlignment="Left" Height="320" Margin="0,87,0,0" VerticalAlignment="Top" Width="682" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
